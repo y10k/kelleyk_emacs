@@ -1,7 +1,8 @@
 galaxy_info:
-  author: your name
-  description: your description
-  company: your company (optional)
+  author: TOKI Yoshinori
+  description: |
+    setup emacs26 on ubuntu with Kevin Kelley's emacs stable releases repository.
+  # company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -14,7 +15,7 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  license: GPLv3
 
   min_ansible_version: 1.2
 
@@ -32,19 +33,15 @@ galaxy_info:
   #
   # platforms is a list of platforms, and each platform has a name and a list of versions.
   #
-  # platforms:
-  # - name: Fedora
-  #   versions:
-  #   - all
-  #   - 25
-  # - name: SomePlatform
-  #   versions:
-  #   - all
-  #   - 1.0
-  #   - 7
-  #   - 99.99
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
 
-  galaxy_tags: []
+  galaxy_tags:
+    - ubuntu
+    - emacs
+    - kelleyk
     # List tags for your role here, one per line. A tag is a keyword that describes
     # and categorizes the role. Users find roles by searching for tags. Be sure to
     # remove the '[]' above, if you add tags to this list.
