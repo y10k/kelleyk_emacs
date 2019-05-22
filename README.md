@@ -7,7 +7,7 @@ see <https://launchpad.net/~kelleyk/+archive/ubuntu/emacs> about the repository.
 Requirements
 ------------
 
-None.
+Need to remove emacs25 packages from target ubuntu.
 
 Role Variables
 --------------
