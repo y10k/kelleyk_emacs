@@ -8,10 +8,12 @@
   with_items:
     - "{{ kelleyk_emacs_old_package }}"
 
-- name: add kelleyk/emacs repository
+- name: emacs stable releases repository
   become: yes
   apt_repository:
-    repo: "{{ kelleyk_emacs_repository }}"
+    repo: "{{ item }}"
+  with_items:
+    - "{{ kelleyk_emacs_repository }}"
 
 - name: emacs packages
   become: yes
